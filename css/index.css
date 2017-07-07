@@ -1,0 +1,114 @@
+/*
+*去掉地图白边
+*/
+body {
+    margin: 0px;
+}
+.navbar-brand {
+    margin-right: 20px;
+}
+.container {
+    width: 1400px
+}
+/**
+*地图铺满窗口
+*/
+#map {
+    /*margin-top: 50px;*/
+    height: 100vh;
+}
+/**
+* The zoomslider in the second map shall be placed between the zoom-in and
+* zoom-out buttons.
+*/
+#map .ol-zoom .ol-zoom-out {
+    margin-top: 204px;
+}
+#map .ol-zoomslider {
+    background-color: transparent;
+}
+
+#map .ol-touch .ol-zoom .ol-zoom-out {
+    margin-top: 212px;
+}
+#map .ol-touch .ol-zoomslider {
+    top: 2.75em;
+}
+
+#map .ol-zoom-in.ol-has-tooltip:hover [role=tooltip],
+#map .ol-zoom-in.ol-has-tooltip:focus [role=tooltip] {
+    top: 3px;
+}
+
+#map .ol-zoom-out.ol-has-tooltip:hover [role=tooltip],
+#map .ol-zoom-out.ol-has-tooltip:focus [role=tooltip] {
+    top: 232px;
+}
+
+/**
+*重新设定ScaleLine的位置
+*
+*/
+.ol-rotate, .ol-full-screen {
+    top: 4.5em;
+}
+.ol-zoom {
+    top: 7em;
+}
+#map .ol-zoomslider {
+    top: 8.8em;
+    /*right: .5em;
+    left: auto;*/
+}
+.ol-zoom, #map .ol-zoomslider {
+    left: auto;
+    right: .5em;
+}
+#footer {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin-bottom: 28px;
+    /*background-color: rgba(0,0,0,0.5);*/
+    padding-right: auto;
+    padding-left: auto;
+}
+#footer-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    /*background-color: lightgrey;*/
+
+}
+#date, #menu, #play {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);/*cornflowerblue;*/
+    margin: 0px 10px;
+
+}
+
+
+#date button, #menu button, #play button {
+    background-color: rgba(0,0,0,0.8);
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 4px;
+    padding: 7px;
+    margin: 5px 10px;
+}
+#footer-container button:hover {
+    background-color: red;
+}
+#menu p {
+    margin: 10px;
+    color: white;
+}

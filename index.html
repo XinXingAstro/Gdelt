@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gdelt</title>
+    <link rel="stylesheet" href="css/ol.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <script src="js/ol.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Gdelt</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">首页</a></li>
+            <li><a href="#about">趋势分析</a></li>
+            <li><a href="#contact">关联分析</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="map" class="map"></div>
+
+    <footer id="footer" class="navbar navbar-fixed-bottom">
+      <div id="footer-container">
+        <div id="date">
+          <button>日期</button>
+        </div>
+        <div id="menu">
+          <button>事件数</button>
+          <button>声誉值</button>
+          <button>稳定性</button>
+          <button>影响力</button>
+          <p>2300000 事件</p>
+        </div>
+        <div id="play">
+          <button>play</button>
+        </div>
+      </div>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

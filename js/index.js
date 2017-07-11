@@ -73,16 +73,24 @@ var map = new ol.Map({
     view: new ol.View({
         center: center[2],
         projection: 'EPSG:4326',
-        zoom: 2.5,
-        minZoom: 2.5,
-        maxZoom: 18
+        zoom: 3,
+        minZoom: 2,
+        maxZoom: 15
     }),
     controls: ol.control.defaults({
         attribution: false
     }).extend([
         new ol.control.FullScreen(),
-        new ol.control.ZoomSlider(),
+        // new ol.control.ZoomSlider(),
         new ol.control.ScaleLine()
     ]),
     logo: false
 });
+
+// $('.search-text').bind('keyup', function(){
+//     var searchText = $('.search-text').val();
+//     $.get('http://api.bing.com/qsonhs.aspx?q='+searchText,function(d){
+        
+//     },'json')
+//     $('.search-select').show();
+// });

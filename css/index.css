@@ -21,7 +21,7 @@ body {
 * The zoomslider in the second map shall be placed between the zoom-in and
 * zoom-out buttons.
 */
-#map .ol-zoom .ol-zoom-out {
+/*#map .ol-zoom .ol-zoom-out {
     margin-top: 204px;
 }
 #map .ol-zoomslider {
@@ -43,7 +43,7 @@ body {
 #map .ol-zoom-out.ol-has-tooltip:hover [role=tooltip],
 #map .ol-zoom-out.ol-has-tooltip:focus [role=tooltip] {
     top: 232px;
-}
+}*/
 
 /**
 *重新设定ScaleLine的位置
@@ -64,6 +64,75 @@ body {
     left: auto;
     right: .5em;
 }
+
+#search {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    background-color: #aaa;
+    padding: 0px;
+    box-shadow: 2px 2px 3px #777777;
+    border-radius: 4px;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+}
+#search-select-menu {
+    display: -webkit-flex;
+    display: flex;
+}
+#search-select-menu button {
+    background-color: white;
+    border: none;
+}
+.search-text {
+    display: -webkit-flex;
+    display: flex;
+    outline: none;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    border: 0px;
+    border-left: 5px solid white;
+}
+
+.search-submit {
+    display: -webkit-flex;
+    display: flex;
+    width: 50px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding-left: 15px;
+}
+/*.search-select {
+    position: absolute;
+    top: 105px;
+    left: 10px;
+    width: 300px;
+    height: 105px;
+    background-color: white;
+    box-shadow: 2px 2px 3px #777777;
+    display: none;
+}
+.search-select ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.search-select ul li {
+    height: 35px;
+    border: 1px solid black;
+    padding: 5px;
+    cursor: pointer;
+}
+.search-select ul li:hover {
+    text-decoration: underline;
+    background-color: #ccc;
+}*/
+
+
+
 #footer {
     display: -webkit-flex;
     display: flex;

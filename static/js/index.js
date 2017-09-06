@@ -1,11 +1,17 @@
-var count = 2000;
-var features = new Array(count);
-for (var i = 0; i < count; ++i) {
-    var Beijing =  [116.23, 39.54];
-    var x = Beijing[0]+(4*Math.random()-4);
-    var y = Beijing[1]+(4*Math.random()-4);
-    features[i] = new ol.Feature(new ol.geom.Point([x, y]));
-}
+// var count = 2000;
+// var features = new Array(count);
+// for (var i = 0; i < count; ++i) {
+//     var Beijing =  [116.23, 39.54];
+//     var x = Beijing[0]+(4*Math.random()-4);
+//     var y = Beijing[1]+(4*Math.random()-4);
+//     features[i] = new ol.Feature(new ol.geom.Point([x, y]));
+// }
+'use strict';
+
+var features = new Array();
+features[0] = new ol.Feature(new ol.geom.Point([116.46, 39.92]));
+features[1] = new ol.Feature(new ol.geom.Point([121.48, 31.22]));
+
 
 var source = new ol.source.Vector({
     features: features

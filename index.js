@@ -57,11 +57,14 @@ if(!isProduction) {
 	let staticFiles = require('./static-files');
     app.use(staticFiles('/static/', __dirname + '/static')); 
 }
+
 app.use(bodyParser());
+
 app.use(templating('views', {
 	noCache: !isProduction,
 	watch: !isProduction
 }));
+
 app.use(controller());
 //app.use(router.routes());
 /*

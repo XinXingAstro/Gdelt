@@ -1,3 +1,5 @@
+'use strict';
+
 const path = require('path');
 const mime = require('mime');
 const mzfs = require('mz/fs');

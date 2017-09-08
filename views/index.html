@@ -15,12 +15,12 @@
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">Gdelt</a>
+        <a class="navbar-brand" href="/">Gdelt</a>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">首页</a></li>
-          <li><a href="#about">趋势分析</a></li>
+          <li class="active"><a href="/">首页</a></li>
+          <li><a href="/trendAnalysis">趋势分析</a></li>
           <li><a href="#contact">关联分析</a></li>
         </ul>
       </div>
@@ -44,8 +44,8 @@
       <input type="text" class="search-text" placeholder="">
       <!-- <input type="submit" class="search-submit" value="搜 索"> -->
     </form>
-    <button type="submit" class="search-submit" value="搜索">
-      <span class="glyphicon glyphicon-search"></span>
+    <button type="submit" class="btn search-submit" value="搜索">
+      <a href="/search" style="color: white;height: 20px"><span class="glyphicon glyphicon-search"></span></a>
     </button>
   </div>
 <!--   <div class="search-select">
@@ -75,6 +75,6 @@
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="static/js/bootstrap.min.js"></script>
-  <script src="static/js/index.js"></script>
+  <script src="/static/js/index.js"></script>
 </body>
 </html>

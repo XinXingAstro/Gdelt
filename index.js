@@ -1,13 +1,15 @@
+'use strict';
+
 const Koa = require('koa');
-// const router = require('koa-router')();
-const bodyParser = require('koa-bodyparser');
-const controller = require('./controller');
+// const router = require('koa-router')();  //注册路由
+const bodyParser = require('koa-bodyparser');  //解析POST内容
+const controller = require('./controller');  
 // const staticFiles = require('./static-files');
 const templating = require('./templating')
-const isProduction = process.env.NODE_ENV === 'production';
 
 const app = new Koa();
 
+const isProduction = process.env.NODE_ENV === 'production';
 // app.use(async (ctx, next) => {
 //     console.log(`${ctx.request.method} + ${ctx.request.url}`);
 //     await next();

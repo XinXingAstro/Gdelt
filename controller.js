@@ -1,3 +1,5 @@
+'use strict';
+
 const fs = require('fs');
 
 function addMapping(router, mapping) {

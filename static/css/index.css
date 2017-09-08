@@ -99,11 +99,11 @@ body {
 .search-submit {
     display: -webkit-flex;
     display: flex;
-    width: 50px;
+    width: 70px;
     border: none;
     color: white;
-    font-size: 18px;
-    padding-left: 15px;
+    font-size: 20px;
+    padding: 10px 25px;
 }
 /*.search-select {
     position: absolute;

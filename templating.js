@@ -1,3 +1,5 @@
+'use strict';
+
 const nunjucks = require('nunjucks');
 
 function createEnv(path, opts) {

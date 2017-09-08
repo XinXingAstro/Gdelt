@@ -4,10 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/trendAnalysis.css">
     <title>trendAnalysis</title>
 </head>
 <body>
-    <svg width="1000" height="500"></svg>
+
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">Gdelt</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/">首页</a></li>
+            <li class="active"><a href="/trendAnalysis">趋势分析</a></li>
+            <li><a href="#contact">关联分析</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 曲线图 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8" style="text-align: center;" >
+                <svg width="1000" height="500" style="margin-top: 150px"></svg>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+    
+    <!-- 搜索栏 -->
+    <div id="search">
+      <div class="dropdown" id="search-select-menu">
+        <button  class="dropdown-toggle" data-toggle="dropdown">
+          <span class="glyphicon glyphicon-user"></span> 搜索角色
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> 搜索角色</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-map-marker"></span> 搜索地区</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-exclamation-sign"></span> 搜索事件</a></li>
+        </ul>
+      </div>
+      <form action="" target="_blank" method="get">
+        <input type="text" class="search-text" placeholder="">
+        <!-- <input type="submit" class="search-submit" value="搜 索"> -->
+      </form>
+      <button type="submit" class="btn search-submit" value="搜索">
+        <a href="/search" style="color: white;height: 20px"><span class="glyphicon glyphicon-search"></span></a>
+      </button>
+    </div>
+
+    <!-- 下方工具栏 -->
+    <footer id="footer" class="navbar navbar-fixed-bottom">
+      <div id="footer-container">
+        <div id="date">
+          <button>日期</button>
+        </div>
+        <div id="menu">
+          <button>事件数</button>
+          <button>声誉值</button>
+          <button>稳定性</button>
+          <button>影响力</button>
+          <p>2300000 事件</p>
+        </div>
+        <div id="play">
+          <button>play</button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
     <script src="/static/js/d3.js"></script>
     <script src="/static/js/curve.js"></script>
 </body>

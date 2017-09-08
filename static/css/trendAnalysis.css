@@ -1,70 +1,17 @@
-/*
-*去掉地图白边
-*/
 body {
     margin: 0px;
+    background-color: #eee;
 }
+
+/*导航条*/
 .navbar-brand {
     margin-right: 20px;
 }
 nav div.container {
     width: 1400px
 }
-/**
-*地图铺满窗口
-*/
-#map {
-    /*margin-top: 50px;*/
-    height: 100vh;
-}
-/**
-* The zoomslider in the second map shall be placed between the zoom-in and
-* zoom-out buttons.
-*/
-/*#map .ol-zoom .ol-zoom-out {
-    margin-top: 204px;
-}
-#map .ol-zoomslider {
-    background-color: transparent;
-}
 
-#map .ol-touch .ol-zoom .ol-zoom-out {
-    margin-top: 212px;
-}
-#map .ol-touch .ol-zoomslider {
-    top: 2.75em;
-}
-
-#map .ol-zoom-in.ol-has-tooltip:hover [role=tooltip],
-#map .ol-zoom-in.ol-has-tooltip:focus [role=tooltip] {
-    top: 3px;
-}
-
-#map .ol-zoom-out.ol-has-tooltip:hover [role=tooltip],
-#map .ol-zoom-out.ol-has-tooltip:focus [role=tooltip] {
-    top: 232px;
-}*/
-
-/**
-*重新设定ScaleLine的位置
-*
-*/
-.ol-rotate, .ol-full-screen {
-    top: 4.5em;
-}
-.ol-zoom {
-    top: 7em;
-}
-#map .ol-zoomslider {
-    top: 8.8em;
-    /*right: .5em;
-    left: auto;*/
-}
-.ol-zoom, #map .ol-zoomslider {
-    left: auto;
-    right: .5em;
-}
-
+/*搜索框*/
 #search {
     position: absolute;
     top: 60px;
@@ -105,34 +52,8 @@ nav div.container {
     font-size: 20px;
     padding: 10px 25px;
 }
-/*.search-select {
-    position: absolute;
-    top: 105px;
-    left: 10px;
-    width: 300px;
-    height: 105px;
-    background-color: white;
-    box-shadow: 2px 2px 3px #777777;
-    display: none;
-}
-.search-select ul {
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-}
-.search-select ul li {
-    height: 35px;
-    border: 1px solid black;
-    padding: 5px;
-    cursor: pointer;
-}
-.search-select ul li:hover {
-    text-decoration: underline;
-    background-color: #ccc;
-}*/
 
-
-
+/*下方工具栏*/
 #footer {
     display: -webkit-flex;
     display: flex;

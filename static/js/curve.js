@@ -53,6 +53,10 @@ g.append("g")
 g.append("g")
     .call(customYAxis);
 
+
+
+
+
 var dataArray0 = [[0, 0],[1, 15],[2, 25],[3, 35],[4, 45],[5, 55],[6, 65],[7, 75],[8, 80],[9, 85],[10, 90],[11, 95],[12, 100]];
 
 var color = d3.scaleOrdinal(d3.schemeCategory10);
@@ -72,6 +76,10 @@ for (let j=0; j < 6; j++) {
         .style('stroke-width', '2px')
         .attr('d', function(d, i) { return line(dataArray0); });
 }
+
+
+
+
 
 var lengendArea = svg.append('g').attr('transform', 'translate(600,20)');
 

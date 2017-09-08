@@ -95,8 +95,11 @@ nav div.container {
     padding: 7px;
     margin: 5px 10px;
 }
-#footer-container button:hover {
+#footer-container button.active {
     background-color: red;
+}
+#footer-container button:hover {
+    background-color: rgb(255, 0, 0);
 }
 #menu p {
     margin: 10px;

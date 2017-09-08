@@ -177,6 +177,9 @@ nav div.container {
 #footer-container button:hover {
     background-color: red;
 }
+#footer-container button.active {
+    background-color: red;
+}
 #menu p {
     margin: 10px;
     color: white;
